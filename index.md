@@ -17,7 +17,7 @@ software. I have experience with managing Linux/Unix based system and Microsoft 
 I love to automate processes everywhere it is possible.
 Currently I would like to work more remotely.
 
-### Technical skills
+## Technical skills
       - routing (pfSense, mikrotik) and switching (Cisco, HP, Dell),
       - vpn (OpenVPN),
       - network managment systems (Nagios, Icinga),
@@ -31,7 +31,7 @@ Currently I would like to work more remotely.
       - basics of IT automation (Ansible),
       - git,
 
-##### Programming languages
+### Programming languages
       - Bash,
       - Perl,
       - Python,
@@ -40,16 +40,16 @@ Currently I would like to work more remotely.
       - C#,
       - Javascript,
       - Powershell (basics)
-##### Markup languages
+### Markup languages
       Markup: HTML, XML, LaTex, markdown
       Databases: T-SQL
-##### Programming techniques
+### Programming techniques
       - Jquery
       - Wordpress themes,
       - Wordpress plugins,
       - Google Apps Scripts,
       - Nagios/Icinga2 scripts
-##### Other
+### Other
       - vector graphic design in Inkscape and graphics in GIMP
 
 ## Experience
