@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -57,11 +57,11 @@ body {
 	line-height: 1.35em;
 	/*also written as...  font: normal normal 400 100%/1.5em;*/
 	font-family: Verdana,sans-serif;
-	/*margin-top: 1em;
-	margin-left: 1em;*/
+	margin-top: 1em;
+	/*margin-left: 1em;*/
 }
 
-p {
+p, code {
 	position: relative;
 	left: 28%;
 	margin-bottom: 0.2em;
@@ -83,14 +83,29 @@ p code {
 }
 
 
-ul { 
+ul {
 	position: relative;
 	left: 28%;
 	width: 65%;
-	margin-bottom: 1em;
-	/*margin-top: -0.5em;*/
+	/*margin-bottom: 1em;*/
+	margin-top: -0.5em;
+	column-count: 2;
 }
 
+.experience_ul {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	column-count: 1;
+}
+
+#professional-networks-profiles+ul {
+	column-count: 1;
+	margin-top: -1em;
+}
+
+.experience_ul>li>ul {
+	column-count: 1;
+}
 /*uncomment to get dashes in the list*/
 /*li:before {
 	content: "-";
@@ -112,6 +127,16 @@ li ul {
 	margin-top: 0.25em;
 }
 
+li:before {
+	content: "-";
+	position: relative;
+	left: -0.25em;
+}
+
+#professional-networks-profiles+ul li::before {
+	content: "";
+}
+
 h1,h2,h3,h4 {
 	font-weight: 400;
 	font-family: Cousine,Verdana,sans-serif;
@@ -126,7 +151,7 @@ h1 {
 	left: 28%;
 }
 
-h1+p { 
+h1+p {
 	/*subtitle*/
 	font-style: italic;
 	font-size: 110%;
@@ -135,7 +160,7 @@ h1+p {
 h2 {
 	font-size: 1.1em;
 	color: #a00;
-	margin-top: 2em;
+	/*margin-top: 0.7em;*/
 	position: relative;
 	top: 1.2em;
 	text-align: right;
@@ -143,15 +168,15 @@ h2 {
 }
 
 h2+p {
-	margin-top: 2.5em;
+	/*margin-top: 2.5em;*/
 }
 
 h3 {
 	font-size: 1em;
-	line-height: 2em; 
+	line-height: 1em;
 	color: #ccc;
 	position: relative;
-	top: 1.6em;
+	/*top: 1em;*/
 	text-align: right;
 	width: 18%;
 }
@@ -165,7 +190,7 @@ a:hover {
 	color:#39f
 }
 
-#webaddress {
+#webaddress, #locationaddress, #birthday {
 	margin-top: 1em;
 	position: relative;
 	left: 28%;
@@ -180,7 +205,7 @@ a:hover {
 
 em {
 	font-style: normal;
-	color: #2d4e5e 
+	color: #2d4e5e
 }
 
 strong {
@@ -192,6 +217,89 @@ strong {
 	visibility: hidden;
 }
 
+table {
+	position: relative;
+	left: 28%;
+	width: 66%;
+	/*margin-bottom: 1em;*/
+}
+
+table th {
+	text-align: left;
+}
+
+table th:first-child{
+	/*width: 100%;*/
+	left: -12%;
+	position: absolute;
+}
+
+table th:first-child code{
+	/*width: 100%;*/
+	left: 0;
+	/*position: absolute;*/
+}
 
 
+table tbody tr:not(:first-child) {
+	/*font-family: Menlo,monospace,sans-serif;*/
+	font-size: 70%;
+}
 
+#languages+table tbody tr,#interests+table tbody tr {
+	/*font-family: Menlo,monospace,sans-serif;*/
+	font-size: 70%;
+}
+
+#languages+table {
+	top: -1.5em;
+	width: 20%;
+}
+
+#interests+table {
+	top: -1.5em;
+}
+
+.languages {
+	margin-right: 2em;
+	-webkit-print-color-adjust: exact;
+}
+
+p img {
+	/*float:left;*/
+  position:absolute;
+	left: -20em;
+    /*right: 5em;*/
+		/*top:-4em;*/
+}
+
+.photodiv, .headerdiv {
+	/*float: left;*/
+}
+
+.mainHeader {
+	/*position: relative;*/
+	float: left;
+	padding-left: 28%;
+	width: 100%;
+	/*margin-bottom: 3em;*/
+}
+
+.photodiv, .headerdiv {
+	float: left;
+	/*width: 20%;*/
+/*margin-right: auto;*/
+/*text-align: right;*/
+}
+
+.photodiv {
+}
+
+.headerdiv {
+	/*width: 65%;
+	left: 13%;
+	position: relative;
+	margin-bottom: 3em;*/
+}
+
+@page { margin: 10; }

@@ -2,9 +2,97 @@
 <html>
 <head>
   <meta charset=utf-8 />
+  <base target="_blank">
   <title> {% if page.title %} {{ page.title }} | {% endif %} CV</title>
   <link href="media/cv-screen.css" type="text/css" rel="stylesheet" media="screen">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet" media="all">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/css/flag-icon.min.css" type="text/css" rel="stylesheet" media="all">
   <link href="media/cv-print.css" type="text/css" rel="stylesheet" media="print">
+  <script>
+  document.addEventListener("DOMContentLoaded",function(){
+    var x = document.getElementsByTagName('li');
+    for (var i=0; i<x.length; ++i){
+      if (x[i].innerHTML.indexOf("linkedin") > -1) {
+        var linkedinicon = document.createElement("i");
+        linkedinicon.className = "fa fa-fw fa-linkedin networkprofiles";
+        x[i].prepend(linkedinicon);
+      }
+      else if (x[i].innerHTML.indexOf("github") > -1) {
+        var githubicon = document.createElement("i");
+        githubicon.className = "fa fa-fw fa-github networkprofiles";
+        x[i].prepend(githubicon);
+      }
+      else if (x[i].innerHTML.indexOf("stackoverflow") > -1) {
+        var stackoverflowicon = document.createElement("i");
+        stackoverflowicon.className = "fa fa-fw fa-stack-overflow networkprofiles";
+        x[i].prepend(stackoverflowicon);
+      }
+    }
+    var langtable = document.querySelector('h2#languages + table');
+    x = langtable.getElementsByTagName("td");
+    for (var i=0; i<x.length; ++i){
+      if (x[i].innerHTML.indexOf("Polish") > -1){
+        var polish_flag = document.createElement("i");
+        polish_flag.className = "flag-icon flag-icon-pl languages";
+        x[i].prepend(polish_flag);
+      }
+      else if (x[i].innerHTML.indexOf("English") > -1){
+        var english_flag = document.createElement("i");
+        english_flag.className = "flag-icon flag-icon-us languages";
+        x[i].prepend(english_flag);
+      }
+      else if (x[i].innerHTML.indexOf("German") > -1){
+        var german_flag = document.createElement("i");
+        german_flag.className = "flag-icon flag-icon-de languages";
+        x[i].prepend(german_flag);
+      }
+    }
+    var experience = document.querySelectorAll("h2, div>ul");
+    var startstop = false;
+    for (var i=0; i<experience.length; ++i){
+      if (experience[i].id === "experience") {
+        startstop = true;
+        continue;
+      }
+      if (experience[i].tagName === "UL" && startstop){
+        experience[i].className += " experience_ul";
+      }
+      if (experience[i].tagName === "H2" && startstop) {
+        break;
+      }
+    }
+
+    var content = document.getElementById("content").children;
+    var mainheader = document.createElement("div");
+    var leftside = document.createElement("div");
+    var rightside = document.createElement("div");
+    var new_right_content = [];
+    var new_left_content;
+    mainheader.className = "mainHeader";
+    leftside.className = "photodiv";
+    rightside.className = "headerdiv";
+    startstop = false;
+    for (var i=0; i<content.length; ++i){
+      var id = content[i].id;
+      if ( content[i].id === "about-me"){
+        break;
+      }
+      var current = content[i];
+      var img = current.getElementsByTagName("img");
+      if (img.length > 0){
+        new_left_content = img[0];
+      }
+      new_right_content.push(content[i]);
+    }
+    for (var child of new_right_content){
+      rightside.appendChild(child);
+    }
+    leftside.appendChild(new_left_content);
+    mainheader.appendChild(leftside);
+    mainheader.appendChild(rightside);
+    document.getElementById("content").prepend(mainheader);
+});
+  </script>
 </head>
 <body>
   <div id="main">

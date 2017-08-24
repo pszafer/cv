@@ -4,11 +4,24 @@ title: Paweł Szafer CV
 ---
 # Paweł Szafer
 Network admin, programmer
+![](media/photo.png)
+
+
+
+
 
 <div id="webaddress">
-<a href="mailto:pszafer@gmail.com">pszafer@gmail.com</a>
+<a href="mailto:pszafer@gmail.com"><i class="fa fa-fw fa-envelope" aria-hidden="true"></i>pszafer@gmail.com</a>
 </div>
 
+<div id="locationaddress">
+<a href="https://www.google.pl/maps/@52.4158851,16.8259776,16z?hl=pl"><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>Bukowska/Złotowska, 60-195 Poznań</a>
+</div>
+
+<div id="phonenumber">
+</div>
+
+<div id="birthday"><i class="fa fa-fw fa-birthday-cake" aria-hidden="true"></i>Birthdate: 05 February 1987</div>
 
 ## About me
 
@@ -18,39 +31,49 @@ I love to automate processes everywhere it is possible.
 Currently I would like to work more remotely.
 
 ## Technical skills
-      - routing (pfSense, mikrotik) and switching (Cisco, HP, Dell),
-      - vpn (OpenVPN),
-      - network managment systems (Nagios, Icinga),
-      - network log managment (graylog, ELK, syslog),
-      - IT asset managment (GLPI),
-      - project managment (Redmine),
-      - Radius (FreeRadius and Microsoft NPS),
-      - network backup (bacula, backuppc) and cloud backup,
-      - server virtualization technologies (hyper-v, proxmox, kvm, virtualbox),
-      - container virtualization (docker, lxc),
-      - basics of IT automation (Ansible),
-      - git,
+- routing (pfSense, mikrotik) and switching (Cisco, HP, Dell),
+- vpn (OpenVPN),
+- network managment systems (Nagios, Icinga),
+- network log managment (graylog, ELK, syslog),
+- IT asset managment (GLPI),
+- project managment (Redmine),
+- Radius (FreeRadius and Microsoft NPS),
+- network backup (bacula, backuppc) and cloud backup,
+- server virtualization technologies (hyper-v, proxmox, kvm, virtualbox),
+- container virtualization (docker, lxc),
+- basics of IT automation (Ansible),
+- git.
 
-### Programming languages
-      - Bash,
-      - Perl,
-      - Python,
-      - PHP,
-      - Javascript,
-      - C#,
-      - Javascript,
-      - Powershell (basics)
-### Markup languages
-      Markup: HTML, XML, LaTex, markdown
-      Databases: T-SQL
+## Programming languages
+- Bash,
+- Perl,
+- Python,
+- PHP,
+- Javascript,
+- C#,
+- Javascript,
+- Powershell (basics).
+
+### Markup
+- HTML,
+- XML,
+- LaTex,
+- Markdown.
+
+### Databases
+- T-SQL,
+- Linq,
+- LDAP.
+
 ### Programming techniques
-      - Jquery
-      - Wordpress themes,
-      - Wordpress plugins,
-      - Google Apps Scripts,
-      - Nagios/Icinga2 scripts
+- Jquery
+- Wordpress themes,
+- Wordpress plugins,
+- Google Apps Scripts,
+- Nagios/Icinga2 scripts.
+
 ### Other
-      - vector graphic design in Inkscape and graphics in GIMP
+- vector graphic design in Inkscape and graphics in GIMP.
 
 ## Experience
 `2014 - ` **Senior network admin**, TB Hydro, Poznan
@@ -66,16 +89,16 @@ deparment,
     - network backup managment based on tape backup (Bareos) and
     - cloud backup (Google Drive backup),{ managing Google Apps for Business,
 - installing and managing network infrastructure,
-      - router,
-      - Windows Servers,
-      - network monitoring based on IP cameras
-      - switches,
-      - WiFi Radius,
-      - VPN,
-      - Synology DiskStation,
-      - VLAN,
-      - VoIP,
-      - server virtualization,
+    - router,
+    - Windows Servers,
+    - network monitoring based on IP cameras
+    - switches,
+    - WiFi Radius,
+    - VPN,
+    - Synology DiskStation,
+    - VLAN,
+    - VoIP,
+    - server virtualization,
 - creating Google Apps Scripts based application for internal use eg.
 live gate entrance monitoring based on NFC cards.
 
@@ -83,7 +106,7 @@ live gate entrance monitoring based on NFC cards.
 
 - network managment,
 - users managment,
-- website managment
+- website managment.
 
 `2011 - 2012 ` **IT technician**, Conspect, Poznan.
 
@@ -91,36 +114,42 @@ live gate entrance monitoring based on NFC cards.
 - installing and reinstalling operating systems,
 - creating LAN networks in construction sites,
 - repairing printers,
-- repairing small routers
+- repairing small routers.
 
 ## Education
 
-
-`2010 - 2012` | __Major in Computer Networks and Distributed Systems__ |  Poznan University of Technology, Poland
---- | ---
-|Degree | Master of Science
-|Thesis | Analysis of UPnP A/V and DLNA in the context of multimedia streaming
- |
-`2007 - 2010` | __Safety of computer systems__ |  Poznan University of Technology, Poland
-|Degree | Engineer
-|Thesis | Project and implementation network backup system
+|`2010 - 2012`                                                                 |
+|------------------------------------------------------------------------------|
+| __Major in Computer Networks and Distributed Systems__                       |
+| Poznan University of Technology, Poland                                      |        
+| Master of Science degree                                                     |
+| Thesis: Analysis of UPnP A/V and DLNA in the context of multimedia streaming |
 
 
+|`2007 - 2010`                                                                 |
+|------------------------------------------------------------------------------|
+| __Safety of computer systems__                                               |
+| Poznan University of Technology, Poland                                      |        
+| Engineer                                                                     |
+| Thesis: Project and implementation network backup system                     |
 
 ## Professional networks profiles
 
-Linkedin http://www.linkedin.com/in/pszafer
-Github https://github.com/pszafer
- Stackoverflow http://stackoverflow.com/cv/pszafer
-
-
+- Linkedin <http://linkedin.com/in/pszafer>
+- Github <https://github.com/pszafer>
+- Stackoverflow <http://stackoverflow.com/cv/pszafer>
 
 ## Languages
 
-Polish Native
-English Advanced
-German Elementary
+| |
+|---|---|
+|Polish| Native
+|English| Advanced
+|German | Elementary
 
-### Interests
-Sport football, cycling, skiing
-Other travelling, movies, new technologies, Raspberry Pi
+## Interests
+
+| |
+|---|---|
+|Sport| football, cycling, skiing
+|Other| travelling, movies, new technologies, Raspberry Pi
