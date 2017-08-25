@@ -153,4 +153,4 @@ live gate entrance monitoring based on NFC cards.
 |---|---|
 |Sport| football, cycling, skiing
 |Other| travelling, movies, new technologies, Raspberry Pi
-||Blog about my travel <http://velomelon.com> and <https://facebook.com/velomelon>
+||Blog about my bike travel accross both America continents  <http://velomelon.com> and <https://facebook.com/velomelon>
