@@ -4,7 +4,7 @@ title: Paweł Szafer CV
 ---
 # Paweł Szafer
 Network admin, programmer
-![](media/photo.png)
+![](media/photo.jpg)
 
 
 

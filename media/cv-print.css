@@ -61,6 +61,12 @@ body {
 	/*margin-left: 1em;*/
 }
 
+img {
+	max-height: 12em;
+	border: 2px solid #aaa;
+  border-radius: 5px;
+}
+
 p, code {
 	position: relative;
 	left: 28%;
