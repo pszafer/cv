@@ -308,4 +308,8 @@ p img {
 	margin-bottom: 3em;*/
 }
 
+.download {
+	display: none;
+}
+
 @page { margin: 10; }
